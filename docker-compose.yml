@@ -1,0 +1,19 @@
+version: "3"
+services:
+  db:
+    image: mariadb
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: abc123_
+      MYSQL_DATABASE: demo
+      MYSQL_USER: demo
+      MYSQL_PASSWORD: demo
+    volumes:
+      - ./docker/mariadb/config:/etc/mysql/conf.d
+      - ./docker/mariadb/data:/var/lib/mysql
+      - ./docker/mariadb/dumps:/docker-entrypoint-initdb.d
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8123:8080 
