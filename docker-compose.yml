@@ -17,3 +17,18 @@ services:
     restart: always
     ports:
       - 8123:8080 
+  nginx:
+    image: nginx
+    volumes:
+      - ./:/app
+      - ./docker/nginx/my.conf:/etc/nginx/conf.d/my.conf
+    ports:
+      - 8124:80
+  app:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/app
+    ports:
+      - 9123
