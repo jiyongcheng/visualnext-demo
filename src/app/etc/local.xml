@@ -28,10 +28,10 @@
 <config>
     <global>
         <install>
-            <date><![CDATA[Tue, 30 Jan 2018 13:13:50 +0000]]></date>
+            <date><![CDATA[Wed, 04 Jul 2018 12:54:19 +0000]]></date>
         </install>
         <crypt>
-            <key><![CDATA[3c2fcad2ab1134a0db536acd83e4055d]]></key>
+            <key><![CDATA[25c3c0edb6d2f4b34d4b30e73f349c7b]]></key>
         </crypt>
         <disable_local_modules>false</disable_local_modules>
         <resources>
@@ -40,9 +40,9 @@
             </db>
             <default_setup>
                 <connection>
-                    <host><![CDATA[localhost]]></host>
+                    <host><![CDATA[db]]></host>
                     <username><![CDATA[root]]></username>
-                    <password><![CDATA[123456]]></password>
+                    <password><![CDATA[abc123_]]></password>
                     <dbname><![CDATA[demo]]></dbname>
                     <initStatements><![CDATA[SET NAMES utf8]]></initStatements>
                     <model><![CDATA[mysql4]]></model>
