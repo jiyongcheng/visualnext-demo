@@ -6,5 +6,4 @@ src/var/cache
 src/var/log
 src/var/report
 src/var/session
-src/app/etc/
 src/app/etc/local.xml
