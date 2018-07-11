@@ -24,8 +24,10 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 ADD . /app
 WORKDIR /app
 
+#change uid and gid of nginx to docker user uid/gid
+RUN usermod -u 1000 www-data && groupmod -g 1000 www-data
+
 # Fix up web file permissions
-RUN chown -R www-data:www-data src/app/etc src/var src/media
 RUN chmod -R go+rw src/app/etc src/var src/media
 
 # Clean up
