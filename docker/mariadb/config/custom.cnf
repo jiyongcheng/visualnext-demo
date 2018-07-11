@@ -4,3 +4,8 @@
 #mysql/my.cnf. If you want to use a customized MySQL configuration, you can create your 
 #alternative configuration file in a directory on the host machine and then mount that #directory location as /etc/mysql/conf.d inside the mariadb container.
 
+key_buffer_size=13421772
+read_buffer_size=209715
+max_used_connections=0
+max_threads=50
+thread_count=0
